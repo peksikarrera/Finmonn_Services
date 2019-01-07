@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact us</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="third.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffbf00">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffbf00">
+    <meta name="description" content="The most successful financial consulting agency"/>
+	  <meta name="keywords" content="consulting financial finance saving income management crisis strategy business plan"/>
+	  <meta name="author" content="Predrag Jovicic"/>
+	  <meta name="language" content="english"/>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <h1><a href="index.html">FinMonn Services</a></h1>
+      </div>
+      <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+        <ul class="navbar-nav center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+            <ul class="nav">
+              <li value="1" class = "nav-item">
+                <a class = "nav-link" href="second.html">Saving</a>
+              </li>
+              <li value="2" class = "nav-item">
+                <a class = "nav-link" href="second.html">Creating a business plan</a>
+              </li>
+              <li value="3" class = "nav-item">
+                <a class = "nav-link" href="second.html">Income management</a>
+              </li>
+              <li value="4" class = "nav-item">
+                <a class = "nav-link" href="second.html">Achieving financial goals</a>
+              </li>
+              <li value="5" class = "nav-item">
+                <a class = "nav-link" href="second.html">Financial crisis exit strategy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link custom" href="third.html">Contact us</a>
+          </li>
+        </ul>
+        <h1><a href="index.html">FinMonn Services</a></h1>
+      </nav>
+      <div id="dugme">
+  			<div id="x">
+  				x
+  			</div>
+		  </div>
+		  <div id="pozadina">
+			     <ul id="meni">
+    				<li><a href="index.html">Home</a></li>
+    				<li><a href="second.html">Services</a></li>
+    				<li><a href="third.html">Contact us</a></li>
+			    </ul>
+		 </div>
+    </header>
+    <main>
+      <div class="center ">
+        <section class="col-xl-6 col-md-8  col-sm-12">
+          <article>
+            <p>If you are interested in our services, or you have some questions please fill this form and we will answer in 24 hours.</p>
+            <form action="#" onSubmit="return provera()">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name">
+                <span id="namerror"></span>
+              </div>
+              <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" class="form-control" id="surname">
+                <span id="surnamerror"></span>
+              </div>
+              <p>Select a date of birth and gender:</p>
+              <div class="row">
+              <div class="form-group col-sm-12 col-md-3">
+                <label>Select gender:</label>
+                <div class="radio">
+                  <label><input type="radio" name="gender" id="male" value="male">&nbsp; Male</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="gender" id="female" value="female">&nbsp; Female</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="gender" id="other" value="other">&nbsp; Other</label>
+                </div>
+              </div>
+              <div class="form-group col-sm-12 col-md-3">
+                <label for="daylist">day</label>
+                <select class="form-control" id="daylist">
+                  <script type="text/javascript">
+                  document.write('<option name="choose" value="0">choose</option>');
+                  for(var i=31;i>0;i--){
+                    document.write("<option value='" + i + "'>" + i + "</option>");
+                  }
+                  </script>
+                </select>
+              </div>
+              <div class="form-group col-sm-12 col-md-3">
+                <label for="monthlist">month</label>
+                <select class="form-control" id="monthlist">
+                  <script type="text/javascript">
+                  document.write('<option name="choose" value="0">choose</option>');
+                  for(var i=12;i>0;i--){
+                    document.write("<option value='" + i + "'>" + i + "</option>");
+                  }
+                  </script>
+                </select>
+              </div>
+              <div class="form-group col-sm-12 col-md-3">
+                <label for="yearlist">year</label>
+                <select class="form-control" id="yearlist">
+                  <script type="text/javascript">
+                  document.write('<option name="choose" value="0">choose</option>');
+                  for(var i=2000;i>1920;i--){
+                    document.write("<option value='" + i + "'>" + i + "</option>");
+                  }
+                  </script>
+                </select>
+              </div>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email address:</label>
+                  <input type="text" class="form-control" id="email">
+                  <span id="emailerror"></span>
+              </div>
+              <div class="form-group">
+                <label for="phoneNumber">Phone number:</label>
+                <input type="text" class="form-control" id="phoneNumber">
+                <span id="phoneNumbererror"></span>
+              </div>
+              <div class="form-group">
+                <label for="textfield">Space for your questions, suggestions... feel free to complete it.</label>
+                <textarea class="form-control" id="textfield" rows="9"></textarea>
+              </div>
+              <button type="submit" id="taster" class="btn btn-outline-warning">Submit</button>
+              <div id="errors" class="alert alert-warning"></div>
+            </form>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <nav>
+      <div class="center">
+      <div class="row">
+        <div class="col-md-4 col-6">
+          <ul class="nav flex-column">
+            <a class="text-light" href="index.html">Home</a>
+            <a class="text-light" href="second.html">Services</a>
+            <a class="text-light" href="third.html">Contact us</a>
+          </ul>
+        </div>
+        <div class="col-md-4 col-6">
+          <ul class="nav flex-column">
+            <a class="text-light" href="author.html">Author page</a>
+            <a class="text-light" href="dokumentacija.pdf">Documentation</a>
+          </ul>
+        </div>
+        <div id="arrow" class="col-md-4 col-12">
+          <a href="#"><img src="images/uparrow.png" alt="up arrow"/></a>
+        </div>
+      </div>
+      </div>
+    </nav>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script3.js"></script>
+  </body>
+</html>
